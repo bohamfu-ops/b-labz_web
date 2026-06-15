@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B-Labz｜技術顧問簡介 · Editorial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Noto+Serif+TC:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F8F5EE;
+    --ink:#1C1814;
+    --muted:#7A7064;
+    --line:#DAD2C4;
+    --acc:#9A3B2E;       /* oxblood */
+    --acc-soft:#F0E4DF;
+    --serif:'Fraunces',serif;
+    --cjk:'Noto Serif TC',serif;
+    --mono:'IBM Plex Mono',monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  body{background:#E9E4D9;font-family:var(--cjk);color:var(--ink);padding:32px 16px;display:flex;justify-content:center;line-height:1.7;}
+  .sheet{width:210mm;min-height:297mm;background:var(--paper);position:relative;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.16);}
+  .pad{padding:20mm 20mm 0;}
+  .mono{font-family:var(--mono);}
+
+  .top{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:10px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:9px;}
+  .top .acc{color:var(--acc);}
+
+  header{margin-top:26px;}
+  .brand{font-family:var(--serif);font-weight:600;font-size:58px;letter-spacing:-1.5px;line-height:.95;}
+  .brand .amp{color:var(--acc);font-style:italic;}
+  .lead{font-family:var(--serif);font-style:italic;font-size:23px;color:var(--ink);margin-top:18px;line-height:1.4;max-width:155mm;}
+  .lead .u{color:var(--acc);}
+  .sub{font-size:13px;color:#48413a;margin-top:14px;max-width:158mm;line-height:1.85;}
+
+  .meta{display:flex;gap:34px;margin-top:20px;font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.5px;}
+  .meta div b{display:block;color:var(--ink);font-size:12px;margin-top:3px;letter-spacing:0;font-family:var(--cjk);}
+
+  .hd{font-family:var(--mono);font-size:10px;letter-spacing:3px;color:var(--acc);text-transform:uppercase;margin:30px 0 14px;display:flex;align-items:center;gap:12px;}
+  .hd::after{content:"";flex:1;height:1px;background:var(--line);}
+
+  .founder{font-size:13px;color:#3a342e;line-height:1.85;max-width:160mm;}
+  .founder b{font-weight:600;}
+  .founder .name{font-family:var(--serif);font-size:17px;font-weight:600;display:inline;}
+
+  .svc{display:grid;grid-template-columns:1fr 1fr;gap:18px 30px;}
+  .svc .it{border-top:2px solid var(--ink);padding-top:9px;}
+  .svc .it .n{font-family:var(--serif);font-size:13px;color:var(--acc);}
+  .svc .it h3{font-family:var(--serif);font-size:17px;font-weight:600;margin-top:2px;}
+  .svc .it .tech{font-family:var(--mono);font-size:9.5px;color:var(--muted);margin-top:6px;line-height:1.7;letter-spacing:.2px;}
+  .svc .it .d{font-size:11.5px;color:#4a443d;margin-top:7px;line-height:1.65;}
+
+  .why{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .why h4{font-family:var(--serif);font-size:15px;font-weight:600;}
+  .why .q{font-family:var(--serif);font-size:24px;color:var(--acc);line-height:0;}
+  .why p{font-size:11px;color:#4a443d;margin-top:8px;line-height:1.7;}
+
+  .work .r{display:flex;gap:14px;padding:8px 0;border-bottom:1px solid var(--line);}
+  .work .r .y{font-family:var(--mono);font-size:11px;color:var(--acc);flex-shrink:0;width:18px;}
+  .work .r .x b{font-size:12.5px;font-weight:600;}
+  .work .r .x i{font-style:italic;color:var(--muted);font-size:11.5px;}
+
+  footer{margin-top:30px;border-top:2px solid var(--ink);padding:18px 20mm 22px;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;}
+  footer h4{font-family:var(--serif);font-size:22px;font-weight:600;}
+  footer p{font-size:11px;color:#4a443d;margin-top:7px;max-width:95mm;line-height:1.65;}
+  footer .contact{font-family:var(--mono);font-size:10.5px;line-height:2.1;text-align:right;white-space:nowrap;}
+  footer .contact .l{color:var(--acc);letter-spacing:1px;}
+
+  @media print{body{background:#fff;padding:0;}.sheet{box-shadow:none;width:auto;min-height:auto;}@page{size:A4;margin:0;}}
+  @media(max-width:780px){.sheet{width:100%;}.svc,.why{grid-template-columns:1fr;}.meta{flex-wrap:wrap;gap:18px;}footer{flex-direction:column;align-items:flex-start;}footer .contact{text-align:left;}}
+</style>
+</head>
+<body>
+<div class="sheet"><div class="pad">
+  <div class="top"><span>B-Labz — Independent Technology Studio</span><span class="acc">Chip · IoT · Software · AI</span></div>
+
+  <header>
+    <div class="brand">B<span class="amp">-</span>Labz</div>
+    <div class="lead">把硬體、軟體與 AI 的整合，<span class="u">收斂成一個可信賴的窗口。</span></div>
+    <div class="sub">B-Labz 是具半導體與全端工程背景的獨立技術顧問，專注於嵌入式硬體、IoT、軟體 / SaaS 與 AI 自動化的整合交付。從韌體、感測硬體到雲端系統與 AI 工作流，由同一個窗口貫穿需求釐清、架構規劃、開發實作到專案管理，協助企業以更精實的節奏，把構想變成能上線的產品。</div>
+    <div class="meta">
+      <div>BASED IN<b>臺灣 · 兩岸專案</b></div>
+      <div>DOMAINS<b>HW · IoT · SW · AI</b></div>
+      <div>MODE<b>獨立技術顧問</b></div>
+      <div>LANGUAGE<b>中文 · English Tech</b></div>
+    </div>
+  </header>
+
+  <div class="hd">創辦人</div>
+  <div class="founder"><span class="name">Baron —</span> <b>國立臺灣大學晶片設計背景</b>出身，曾任於晶片設計公司，累積臺灣與中國大陸兩岸的軟硬體專案經驗。橫跨晶片級韌體到雲端 SaaS，以工程實作搭配顧問思維，習慣以「一支隊伍」的完整視角，獨立承接跨領域專案。</div>
+
+  <div class="hd">核心服務</div>
+  <div class="svc">
+    <div class="it"><div class="n">01</div><h3>嵌入式與 IoT 硬體</h3><div class="tech">NB-IoT · BLE 5.0 · MQTT · Firmware · 外殼設計 · 3D列印 · BSMI/NCC</div><div class="d">從感測器、通訊協定到韌體與法規認證規劃，協助硬體產品從原型走到量產。</div></div>
+    <div class="it"><div class="n">02</div><h3>軟體與 SaaS 開發</h3><div class="tech">Next.js · NestJS · Prisma · PostgreSQL · Docker · Cloud/Nginx</div><div class="d">全端 Web 與 SaaS 系統開發，涵蓋架構設計、開發到雲端部署與維運。</div></div>
+    <div class="it"><div class="n">03</div><h3>AI 自動化與整合</h3><div class="tech">LLM Agents · RAG · MCP · n8n Workflow · AI 客服/銷售自動化</div><div class="d">導入大型語言模型與自動化流程，降低重複性人力成本、提升服務與轉換效率。</div></div>
+    <div class="it"><div class="n">04</div><h3>技術顧問與企業培訓</h3><div class="tech">專案管理 · 系統評估與選型 · 廠商評估 · 企業 AI 課程設計</div><div class="d">以中立顧問角色協助需求釐清、技術選型與團隊養成，從入門到工程實戰。</div></div>
+  </div>
+
+  <div class="hd">為什麼選 B-Labz</div>
+  <div class="why">
+    <div><div class="q">“</div><h4>全端整合，單一窗口</h4><p>硬體、軟體、AI 不必拆給多個團隊，溝通成本與系統介面風險大幅降低。</p></div>
+    <div><div class="q">“</div><h4>實作 × 顧問思維</h4><p>不只給建議，也能親手交付可運行的成品——系統、文件與可驗證的原型。</p></div>
+    <div><div class="q">“</div><h4>兩岸專案經驗</h4><p>熟悉臺灣與中國大陸的市場與資源，能協同跨境開發與供應鏈整合。</p></div>
+  </div>
+
+  <div class="hd">代表性專案</div>
+  <div class="work">
+    <div class="r"><div class="y">01</div><div class="x"><b>智慧電表 IoT 系統</b> — <i>擔任專案經理與技術整合窗口，串接韌體、通訊與認證規劃</i></div></div>
+    <div class="r"><div class="y">02</div><div class="x"><b>健身房管理 SaaS</b> — <i>門禁 / 生物辨識與營運管理系統的設計與開發</i></div></div>
+    <div class="r"><div class="y">03</div><div class="x"><b>金融業 AI 客服 / 銷售自動化</b> — <i>CFD / 外匯情境的 AI 流程評估與導入</i></div></div>
+    <div class="r"><div class="y">04</div><div class="x"><b>多語系不動產平台 + LINE OA</b> — <i>跨城市網站與智慧物件媒合聊天機器人</i></div></div>
+    <div class="r"><div class="y">05</div><div class="x"><b>企業 AI 工程師培訓</b> — <i>入門到 LLM / RAG / MLOps 的階段式課程設計</i></div></div>
+  </div>
+</div>
+
+<footer>
+  <div>
+    <h4>有專案構想？歡迎聊聊。</h4>
+    <p>來信簡述您的情境與目標，我會在了解需求後提供務實的範疇建議與報價，再決定是否合作。</p>
+  </div>
+  <div class="contact">
+    <span class="l">EMAIL</span> &nbsp;{{b-labz@gmail.com}}<br>
+    <span class="l">LINE </span> &nbsp;{{bohamfu}}<br>
+    <span class="l">WEB  </span> &nbsp;{{.}}
+  </div>
+</footer>
+</div>
+</body>
+</html>
